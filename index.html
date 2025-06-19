@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lali Art Gallery - Discover and Collect Fine Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="homepage">
+
+    <header class="site-header" id="site-header">
+    <div class="container header-container">
+        <div class="logo"><a href="index.html">Lali Art Gallery</a></div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <i class="fas fa-bars icon-open"></i>
+            <i class="fas fa-times icon-close"></i>
+        </button>
+        <div class="primary-navigation" id="primary-navigation" data-visible="false">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="gallery.html">The Gallery</a></li>
+                    <li><a href="index.html#artists">Artists</a></li>
+                    <li><a href="sell-your-art.html">Sell Your Art</a></li>
+                    <li><a href="our-story.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="icon search-icon-toggle"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html" class="icon wishlist-icon">
+                    <i class="fas fa-heart"></i>
+                    <span class="wishlist-item-count" data-count="0">0</span>
+                </a>
+                <a href="cart.html" class="icon cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-item-count" data-count="0">0</span>
+                </a>
+                <!-- Auth Links (Final Correction with IDs) -->
+                <div class="auth-links">
+                    <div id="guest-actions">
+                        <a href="login.html" class="auth-link" id="header-login-link">Login</a>
+                        <span class="auth-separator" id="header-auth-separator">/</span>
+                        <a href="register.html" class="auth-link" id="header-register-link">Register</a>
+                    </div>
+                    <div id="user-actions" style="display: none;">
+                        <a href="account.html" class="auth-link">My Account</a>
+                        <button id="logout-btn" class="auth-link-btn">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <section class="hero-section">
+            <video class="hero-video" autoplay loop muted playsinline poster="assets/images/hero-background.jpg">
+                <source src="assets/videos/hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Where Art Finds Its Voice</h1>
+                <p>Discover and collect exceptional works from emerging and established artists worldwide.</p>
+                <a href="gallery.html" class="cta-button">View The Gallery</a>
+            </div>
+        </section>
+
+        <section class="intro-section container">
+            <h2>More Than a Gallery</h2>
+            <p>We believe that every artwork tells a unique story. We connect discerning collectors with the world's most compelling artistic voices, fostering a global dialogue through art.</p>
+        </section>
+
+        <section class="glimpse-section container">
+            <div class="intro-section" style="padding: 0; margin-bottom: 50px;">
+                <h2>A Glimpse Into Our Collection</h2>
+            </div>
+            <div class="swiper-container-wrapper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="gallery.html"><img src="assets\images\Abstract_Art1.png" /><div class="slide-content"><h3>Abstract Art</h3></div></a></div>
+                        <div class="swiper-slide"><a href="gallery.html"><img src="assets\images\Tapestry_&_Wool1.png" /><div class="slide-content"><h3>Tapestry Art</h3></div></a></div>
+                        <div class="swiper-slide"><a href="gallery.html"><img src="assets\images\Contemporary_Art1.png" /><div class="slide-content"><h3>Contemporary Art</h3></div></a></div>
+                        <div class="swiper-slide"><a href="gallery.html"><img src="assets\images\Handmade_Textile1.png" /><div class="slide-content"><h3>Handmade Textile</h3></div></a></div>
+                        <div class="swiper-slide"><a href="gallery.html"><img src="assets\images\Digital_Art1.png" /><div class="slide-content"><h3>Digital Art</h3></div></a></div>
+                        <div class="swiper-slide"><a href="gallery.html"><img src="assets\images\Sculpture_Art1.png" /><div class="slide-content"><h3>Sculpture</h3></div></a></div>
+                        <div class="swiper-slide"><a href="gallery.html"><img src="assets\images\Street_Art1.png" /><div class="slide-content"><h3>Street Art</h3></div></a></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section class="parallax-section">
+            <div class="hero-overlay" style="background: rgba(0,0,0,0.5);"></div>
+            <div class="parallax-content container"><h2>"Art is the lie that enables us to realize the truth." - Pablo Picasso</h2></div>
+        </section>
+
+        <section class="artisans-section container" id="artists">
+            <div class="intro-section" style="padding:0; margin-bottom: 50px;"><h2>Featured Artists</h2></div>
+            <div class="artisans-grid">
+                 <div class="artisan-card"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888" alt="Artist 1"><h3>Isabella Rossi</h3><h4>Painter, Italy</h4><blockquote>"My work explores the intersection of memory and landscape."</blockquote></div>
+                 <div class="artisan-card"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887" alt="Artist 2"><h3>Kenji Tanaka</h3><h4>Sculptor, Japan</h4><blockquote>"I find harmony in the balance between raw material and refined form."</blockquote></div>
+                 <div class="artisan-card"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961" alt="Artist 3"><h3>Chloe Dubois</h3><h4>Photographer, France</h4><blockquote>"I capture the quiet, unseen narratives of urban life."</blockquote></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer-main"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>

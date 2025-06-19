@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery - Lali Art Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="content-page">
+
+    <header class="site-header" id="site-header">
+    <div class="container header-container">
+        <div class="logo"><a href="index.html">Lali Art Gallery</a></div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <i class="fas fa-bars icon-open"></i>
+            <i class="fas fa-times icon-close"></i>
+        </button>
+        <div class="primary-navigation" id="primary-navigation" data-visible="false">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="gallery.html">The Gallery</a></li>
+                    <li><a href="index.html#artists">Artists</a></li>
+                    <li><a href="sell-your-art.html">Sell Your Art</a></li>
+                    <li><a href="our-story.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="icon search-icon-toggle"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html" class="icon wishlist-icon">
+                    <i class="fas fa-heart"></i>
+                    <span class="wishlist-item-count" data-count="0">0</span>
+                </a>
+                <a href="cart.html" class="icon cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-item-count" data-count="0">0</span>
+                </a>
+                <!-- Auth Links (Final Correction with IDs) -->
+                <div class="auth-links">
+                    <div id="guest-actions">
+                        <a href="login.html" class="auth-link" id="header-login-link">Login</a>
+                        <span class="auth-separator" id="header-auth-separator">/</span>
+                        <a href="register.html" class="auth-link" id="header-register-link">Register</a>
+                    </div>
+                    <div id="user-actions" style="display: none;">
+                        <a href="account.html" class="auth-link">My Account</a>
+                        <button id="logout-btn" class="auth-link-btn">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="container">
+        <section class="collection-intro-section">
+            <h1 class="collection-title">Explore Our Collections</h1>
+            <p class="collection-subtitle">Browse through our curated collections, each with a unique artistic vision.</p>
+        </section>
+
+        <!-- NEW: Filter Buttons Section -->
+        <section class="category-filters container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Collections</button>
+                <button class="filter-btn" data-filter="painting">Painting & Wall Art</button>
+                <button class="filter-btn" data-filter="textile">Textile & Fiber</button>
+                <button class="filter-btn" data-filter="modern">Modern & Conceptual</button>
+                <button class="filter-btn" data-filter="digital">Photography & Digital</button>
+            </div>
+        </section>
+        
+        <section class="category-grid-section">
+            <div class="category-grid">
+                <a href="category-view.html?category=original-wall-art" class="category-card" data-tags="painting"><img src="assets\images\Original_Wall_Art1.png" alt="Original Wall Art"><div class="category-overlay"><h3>Original Wall Art</h3></div></a>
+                <a href="category-view.html?category=handmade-textile" class="category-card" data-tags="textile"><img src="assets\images\Handmade_Textile1.png" alt="Handmade Textile"><div class="category-overlay"><h3>Handmade Textile</h3></div></a>
+                <a href="category-view.html?category=felt" class="category-card" data-tags="textile"><img src="assets\images\Felt_Art1.png" alt="Felt"><div class="category-overlay"><h3>Felt</h3></div></a>
+                <a href="category-view.html?category=tapestry-wool" class="category-card" data-tags="textile"><img src="assets\images\Tapestry_&_Wool1.png" alt="Tapestry & Wool"><div class="category-overlay"><h3>Tapestry & Wool</h3></div></a>
+                <a href="category-view.html?category=handmade-art" class="category-card" data-tags="painting textile"><img src="assets\images\Handmade_Art1.png" alt="Handmade Art"><div class="category-overlay"><h3>Handmade Art</h3></div></a>
+                <a href="category-view.html?category=wall-art" class="category-card" data-tags="painting"><img src="assets\images\Wall_Art1.png" alt="Wall Art"><div class="category-overlay"><h3>Wall Art</h3></div></a>
+                <a href="category-view.html?category=textile-design" class="category-card" data-tags="textile modern"><img src="assets\images\Textile_Design1.png" alt="Textile Design"><div class="category-overlay"><h3>Textile Design</h3></div></a>
+                <a href="category-view.html?category=tapestry-art" class="category-card" data-tags="textile"><img src="assets\images\Tapestry_Art1.png" alt="Tapestry Art"><div class="category-overlay"><h3>Tapestry Art</h3></div></a>
+                <a href="category-view.html?category=fashion-art-design" class="category-card" data-tags="modern"><img src="assets\images\Fashion_Art_&_Design1.png" alt="Fashion Art & Design"><div class="category-overlay"><h3>Fashion Art & Design</h3></div></a>
+                <a href="category-view.html?category=abstract" class="category-card" data-tags="painting modern"><img src="assets\images\Abstract_Art1.png" alt="Abstract Art"><div class="category-overlay"><h3>Abstract Art</h3></div></a>
+                <a href="category-view.html?category=contemporary-art" class="category-card" data-tags="painting modern"><img src="assets\images\Contemporary_Art1.png" alt="Contemporary Art"><div class="category-overlay"><h3>Contemporary Art</h3></div></a>
+                <a href="category-view.html?category=digital-art" class="category-card" data-tags="digital modern"><img src="assets\images\Digital_Art1.png" alt="Digital Art"><div class="category-overlay"><h3>Digital Art</h3></div></a>
+                <a href="category-view.html?category=street-art" class="category-card" data-tags="painting modern"><img src="assets\images\Street_Art1.png" alt="Street Art"><div class="category-overlay"><h3>Street Art</h3></div></a>
+                <a href="category-view.html?category=minimalism" class="category-card" data-tags="modern"><img src="assets\images\Minimalism1.png" alt="Minimalism"><div class="category-overlay"><h3>Minimalism</h3></div></a>
+                <a href="category-view.html?category=conceptual-art" class="category-card" data-tags="modern"><img src="assets\images\Conceptual_Art1.png" alt="Conceptual Art"><div class="category-overlay"><h3>Conceptual Art</h3></div></a>
+                <a href="category-view.html?category=photorealism" class="category-card" data-tags="painting"><img src="assets\images\Photorealism1.png" alt="Photorealism"><div class="category-overlay"><h3>Photorealism</h3></div></a>
+                <a href="category-view.html?category=surrealism" class="category-card" data-tags="painting modern"><img src="assets\images\Surrealism1.png" alt="Surrealism"><div class="category-overlay"><h3>Surrealism</h3></div></a>
+                <a href="category-view.html?category=pop-art" class="category-card" data-tags="painting modern"><img src="assets\images\Pop_Art1.png" alt="Pop Art"><div class="category-overlay"><h3>Pop Art</h3></div></a>
+                <a href="category-view.html?category=abstract-expressionism" class="category-card" data-tags="painting modern"><img src="assets\images\Abstract_Expressionism1.png" alt="Abstract Expressionism"><div class="category-overlay"><h3>Abstract Expressionism</h3></div></a>
+                <a href="category-view.html?category=figurative" class="category-card" data-tags="painting"><img src="assets\images\Figurative_Art1.png" alt="Figurative Art"><div class="category-overlay"><h3>Figurative Art</h3></div></a>
+                <a href="category-view.html?category=installation-art" class="category-card" data-tags="modern"><img src="assets\images\Installation_Art1.png" alt="Installation Art"><div class="category-overlay"><h3>Installation Art</h3></div></a>
+                <a href="category-view.html?category=mixed-media" class="category-card" data-tags="painting modern"><img src="assets\images\Mixed_Media1.png" alt="Mixed Media"><div class="category-overlay"><h3>Mixed Media</h3></div></a>
+                <a href="category-view.html?category=nature-inspired-art" class="category-card" data-tags="painting digital"><img src="assets\images\Nature_Inspired_Art1.png" alt="Nature-Inspired Art"><div class="category-overlay"><h3>Nature-Inspired Art</h3></div></a>
+                <a href="category-view.html?category=eco-friendly-art" class="category-card" data-tags="modern"><img src="assets\images\Eco_Friendly_Art1.png" alt="Eco-Friendly Art"><div class="category-overlay"><h3>Eco-Friendly Art</h3></div></a>
+                <a href="category-view.html?category=photography" class="category-card" data-tags="digital"><img src="assets\images\Photography_Art1.png" alt="Photography"><div class="category-overlay"><h3>Photography</h3></div></a>
+                <a href="category-view.html?category=sculpture" class="category-card" data-tags="modern"><img src="assets\images\Sculpture_Art1.png" alt="Sculpture"><div class="category-overlay"><h3>Sculpture</h3></div></a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer-main"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

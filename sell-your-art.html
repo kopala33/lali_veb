@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Art - Lali Art Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="content-page">
+
+    <header class="site-header" id="site-header">
+    <div class="container header-container">
+        <div class="logo"><a href="index.html">Lali Art Gallery</a></div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <i class="fas fa-bars icon-open"></i>
+            <i class="fas fa-times icon-close"></i>
+        </button>
+        <div class="primary-navigation" id="primary-navigation" data-visible="false">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="gallery.html">The Gallery</a></li>
+                    <li><a href="index.html#artists">Artists</a></li>
+                    <li><a href="sell-your-art.html">Sell Your Art</a></li>
+                    <li><a href="our-story.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="icon search-icon-toggle"><i class="fas fa-search"></i></a>
+                <a href="wishlist.html" class="icon wishlist-icon">
+                    <i class="fas fa-heart"></i>
+                    <span class="wishlist-item-count" data-count="0">0</span>
+                </a>
+                <a href="cart.html" class="icon cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-item-count" data-count="0">0</span>
+                </a>
+                <!-- Auth Links (Final Correction with IDs) -->
+                <div class="auth-links">
+                    <div id="guest-actions">
+                        <a href="login.html" class="auth-link" id="header-login-link">Login</a>
+                        <span class="auth-separator" id="header-auth-separator">/</span>
+                        <a href="register.html" class="auth-link" id="header-register-link">Register</a>
+                    </div>
+                    <div id="user-actions" style="display: none;">
+                        <a href="account.html" class="auth-link">My Account</a>
+                        <button id="logout-btn" class="auth-link-btn">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="container">
+        <section class="story-section">
+            <h1 class="story-title">Join Our Artists</h1>
+            <p class="collection-subtitle" style="max-width: 700px; margin-bottom: 50px;">Lali Art Gallery is always seeking new talent. If you are an artist with a unique vision and a commitment to your craft, we invite you to submit your portfolio for consideration.</p>
+            
+            <form class="submission-form">
+                <div class="form-row">
+                    <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" required></div>
+                    <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" required></div>
+                </div>
+                <div class="form-group"><label for="portfolio">Link to Your Portfolio (or Instagram, Behance, etc.)</label><input type="url" id="portfolio" required></div>
+                <div class="form-group"><label for="message">A brief statement about your work</label><textarea id="message" rows="5"></textarea></div>
+                <button type="submit" class="cta-button">Submit Application</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="site-footer-main"></footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
